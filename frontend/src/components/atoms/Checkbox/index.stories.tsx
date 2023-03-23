@@ -5,7 +5,7 @@ import { ComponentStory } from '@storybook/react'
 import Checkbox from './index';
 
 export default {
-  title: 'Checkbox',
+  title: 'Atoms/Checkbox',
   component: Checkbox,
 };
 
