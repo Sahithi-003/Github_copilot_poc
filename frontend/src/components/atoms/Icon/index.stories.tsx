@@ -5,7 +5,7 @@ import { ComponentStory } from '@storybook/react'
 import Icon from './index';
 
 export default {
-  title: 'Icon',
+  title: 'Atoms/Icon',
   component: Icon,
 };
 
