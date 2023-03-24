@@ -23,9 +23,11 @@
         "@mui/lab": "^5.0.0-alpha.95",
         "@mui/material": "^5.9.3",
         "@mui/styles": "^5.9.3",
+        "@mui/x-date-pickers": "^6.0.3",
         "@testing-library/react": "^13.3.0",
         "axios": "^0.27.2",
         "axios-mock-adapter": "^1.21.2",
+        "dayjs": "^1.11.7",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-15": "^1.4.3",
         "eslint-config-zemoso": "^1.0.3",
@@ -37,6 +39,7 @@
         "path": "^0.12.7",
         "react-router-dom": "^6.3.0",
         "react-scripts": "^5.0.1",
+        "react-use": "^17.4.0",
         "storybook": "^6.5.16"
     },
     "devDependencies": {
