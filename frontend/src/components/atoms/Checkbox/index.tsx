@@ -4,7 +4,7 @@ import React from 'react';
 import Checkbox from '@mui/material/Checkbox';
 
 interface Props {
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
   color?: string;
   onChange: () => void;
 }
