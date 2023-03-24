@@ -9,7 +9,6 @@ import {
 import RadioButton from '../../atoms/RadioButton';
 import theme from '../../../theme/theme';
 import { Svg } from '../../../constants/constants';
-import Image from '../../atoms/Icon';
 import Icon from '../../atoms/Icon';
 
 interface PaymentProps {
@@ -57,16 +56,30 @@ const PaymentOptions = (props: PaymentOptionsProps) => {
       <RadioGroup defaultValue="googlepay">
         {props.options.map((option, key) => {
           return (
-            <DivContainer key={key}>
+            // eslint-disable-next-line react/jsx-key
+            <DivContainer>
               <DivItem>
-                <Icon src={option.icon} alt={"text"} width="24px" height="24px" />
+                <Icon
+                  src={option.icon}
+                  alt={'text'}
+                  width="24px"
+                  height="24px"
+                />
                 <TypographyItem variant="caption">
                   {option.label}
                 </TypographyItem>
               </DivItem>
               <FormControlLabel
                 value={option.value}
-                control={<RadioBtn name={''} value={''} label={''} checked={false} onChange={undefined} />}
+                control={
+                  <RadioBtn
+                    name={''}
+                    value={''}
+                    label={''}
+                    checked={false}
+                    onChange={undefined}
+                  />
+                }
                 label={undefined}
                 labelPlacement="start"
               />
