@@ -3,14 +3,12 @@ import { Grid, styled, Typography } from '@mui/material';
 import React from 'react';
 import theme from '../../../theme/theme';
 import {
-  ADD_CARD,
   CardPaymentHeader,
   options,
   PaymentOptionsHeader,
 } from '../../../constants/constants';
-import CustomButton from '../../molecules/IconButton';
-import Image from '../../atoms/Icon';
-import CreditCard from '../../molecules/CreditCard';
+import CreditCard from '../../molecules/Creditcard';
+import IconWithButton from '../../molecules/IconButton';
 import PaymentOptions from '../../molecules/PaymentOptions';
 
 const PaymentHeaderContainer = styled(Grid)({});
@@ -38,17 +36,7 @@ const CheckoutPaymentOptions = () => {
             </Typography>
           </Grid>
           <Grid item marginLeft={'auto'}>
-            <CustomButton
-              label={ADD_CARD}
-              style={{
-                color: 'primary.main',
-                fontWeight: 500,
-                cursor: 'pointer',
-                fontSize: '16px',
-              }}
-              startIcon={<Image source="Add.svg" />}
-              variant={'text'}
-            />
+            <IconWithButton icon={'Add.svg'} text={'add button'}/>
           </Grid>
           <Grid item xs={12} md={12}>
             <CreditCard
